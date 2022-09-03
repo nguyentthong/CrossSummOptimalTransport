@@ -24,7 +24,7 @@ framework to tackle Neural Cross-Lingual Summarization for morphologically or st
 - pytorch 1.7.0
 
 ## How to Run
-1. Download and put the dataset in the ```data``` folder: https://drive.google.com/file/d/1bQ0gQuqGOdVf3QTx2WP7Gke1_bo0rtpz/view?usp=sharing
+1. Download and put the dataset in the ```data``` folder: https://drive.google.com/file/d/1m6Dhab5J74v9gAtgolVoorlF_2G-HlqR/view?usp=sharing
 2. Train the monolingual teacher model by running ```./run/continual_NCLS/ncls_train_<l1>2<l2>-<l1>2<l1>.sh```
 3. Train the cross-lingual student model through executing ```./run/continual_NCLS/ncls_train_<l1>2<l2>-<l1>2<l2>-ot_loss.sh```
 4. Evaluate the cross-lingual student model via executing ```./run/continual_NCLS/ncls_test_<l1>2<l2>-<l1>2<l2>-ot_loss.sh```
