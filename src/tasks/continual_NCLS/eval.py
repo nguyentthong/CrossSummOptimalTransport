@@ -12,10 +12,10 @@ def main():
                             weight_factor=1.2,
                             stemming=True)
 
-    with open('/mnt/vinai/Repos/MCLAS/results/test.15000.candidate','r') as f:
+    with open('./results/test.15000.candidate','r') as f:
         candidate_lines = f.readlines()
 
-    with open('/mnt/vinai/Repos/MCLAS/results/test.15000.gold','r') as f:
+    with open('./results/test.15000.gold','r') as f:
         gold_lines = f.readlines()
 
     score_list = []
@@ -24,9 +24,6 @@ def main():
         references = [[gold_lines[i].strip()]]
         scores = evaluator.get_scores(hypothesis,references)
         score_list.append(scores['rouge-1']['f'])
-    
-    import pdb
-    pdb.set_trace()
 
 if __name__ == '__main__':
     main()
